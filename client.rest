@@ -1,0 +1,12 @@
+GET http://localhost:8080
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/auth/github
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/auth/github/callback
+Content-Type: application/json
