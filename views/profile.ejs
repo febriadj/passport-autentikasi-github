@@ -10,11 +10,22 @@
   <div id="app">
     <div id="app-wrap">
       <a href="/logout">Log Out</a>
-      <h2><%= details.name %></h2>
-      <p><%= details.bio %></p>
-      <p><%= details.company %></p>
-      <p><%= details.location %></p>
-      <p><%= details.email %></p>
+      <table>
+        <tr>
+          <td>Nama</td>
+          <td>Bio</td>
+          <td>Univ</td>
+          <td>Lokasi</td>
+          <td>Email</td>
+        </tr>
+        <tr>
+          <td><%= details.name %></td>
+          <td><%= details.bio %></td>
+          <td><%= details.company %></td>
+          <td><%= details.location %></td>
+          <td><%= details.email %></td>
+        </tr>
+      </table>
     </div>
   </div>
 </body>
