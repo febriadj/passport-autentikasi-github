@@ -9,18 +9,7 @@
 <body>
   <div id="auth">
     <div id="auth-wrap">
-      <button onclick="handleClick()">Sign in Github</button>
-      <script>
-        function handleClick() {
-          fetch('http://localhost:8080/auth/github/callback', {
-            method: 'GET',
-            headers: {
-              'Content-Type': 'text/html'
-            }
-          })
-          .then(result => console.log(result))
-        }
-      </script>
+      <a href="/auth/github">Login Melalui Github</a>
     </div>
   </div>
 </body>
