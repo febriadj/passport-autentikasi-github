@@ -43,8 +43,7 @@ router.get('/auth/github', passport.authenticate('github'),
   }
 )
 
-router.get('/auth/github/callback', passport.authenticate('github', 
-  { failureRedirect: '/auth/error' }), 
+router.get('/auth/github/callback', passport.authenticate('github'),  
   (req, res, next) => {
     res.status(301).redirect('/')
   }
